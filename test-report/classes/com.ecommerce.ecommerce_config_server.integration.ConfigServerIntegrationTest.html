@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">5.178s</div>
+<div class="counter">2.785s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,22 +79,22 @@
 </thead>
 <tr>
 <td class="success">shouldFallbackGracefullyForInvalidProfile()</td>
-<td class="success">0.136s</td>
+<td class="success">0.152s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldReturnAuthServiceDefaultConfig()</td>
-<td class="success">0.187s</td>
+<td class="success">0.176s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldReturnAuthServiceDevConfig()</td>
-<td class="success">0.185s</td>
+<td class="success">0.177s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldReturnGlobalConfigForUnknownService()</td>
-<td class="success">4.670s</td>
+<td class="success">2.280s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -102,39 +102,39 @@
 <div class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>12:23:14.264 [Test worker] INFO org.testcontainers.images.PullPolicy -- Image pull policy will be performed by: DefaultPullPolicy()
-12:23:14.269 [Test worker] INFO org.testcontainers.utility.ImageNameSubstitutor -- Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
-12:23:14.310 [Test worker] INFO org.testcontainers.DockerClientFactory -- Testcontainers version: 1.20.6
-12:23:14.994 [Test worker] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
-12:23:14.999 [Test worker] INFO org.testcontainers.DockerClientFactory -- Docker host IP address is localhost
-12:23:15.014 [Test worker] INFO org.testcontainers.DockerClientFactory -- Connected to docker: 
+<pre>13:08:07.294 [Test worker] INFO org.testcontainers.images.PullPolicy -- Image pull policy will be performed by: DefaultPullPolicy()
+13:08:07.300 [Test worker] INFO org.testcontainers.utility.ImageNameSubstitutor -- Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+13:08:07.316 [Test worker] INFO org.testcontainers.DockerClientFactory -- Testcontainers version: 1.20.6
+13:08:07.750 [Test worker] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+13:08:07.760 [Test worker] INFO org.testcontainers.DockerClientFactory -- Docker host IP address is localhost
+13:08:07.776 [Test worker] INFO org.testcontainers.DockerClientFactory -- Connected to docker: 
   Server Version: 28.0.4
   API Version: 1.48
   Operating System: Ubuntu 24.04.2 LTS
   Total Memory: 15989 MB
-12:23:15.040 [Test worker] INFO tc.testcontainers/ryuk:0.11.0 -- Pulling docker image: testcontainers/ryuk:0.11.0. Please be patient; this may take some time but only needs to be done once.
-12:23:15.291 [docker-java-stream--1295187651] INFO tc.testcontainers/ryuk:0.11.0 -- Starting to pull image
-12:23:15.307 [docker-java-stream--1295187651] INFO tc.testcontainers/ryuk:0.11.0 -- Pulling image layers:  0 pending,  0 downloaded,  0 extracted, (0 bytes/0 bytes)
-12:23:15.403 [docker-java-stream--1295187651] INFO tc.testcontainers/ryuk:0.11.0 -- Pulling image layers:  2 pending,  1 downloaded,  0 extracted, (843 KB/? MB)
-12:23:15.444 [docker-java-stream--1295187651] INFO tc.testcontainers/ryuk:0.11.0 -- Pulling image layers:  1 pending,  2 downloaded,  0 extracted, (879 KB/? MB)
-12:23:15.470 [docker-java-stream--1295187651] INFO tc.testcontainers/ryuk:0.11.0 -- Pulling image layers:  0 pending,  3 downloaded,  0 extracted, (4 MB/10 MB)
-12:23:15.570 [docker-java-stream--1295187651] INFO tc.testcontainers/ryuk:0.11.0 -- Pulling image layers:  0 pending,  3 downloaded,  1 extracted, (4 MB/10 MB)
-12:23:15.689 [docker-java-stream--1295187651] INFO tc.testcontainers/ryuk:0.11.0 -- Pulling image layers:  0 pending,  3 downloaded,  2 extracted, (4 MB/10 MB)
-12:23:15.731 [docker-java-stream--1295187651] INFO tc.testcontainers/ryuk:0.11.0 -- Pulling image layers:  0 pending,  3 downloaded,  3 extracted, (10 MB/10 MB)
-12:23:15.739 [Test worker] INFO tc.testcontainers/ryuk:0.11.0 -- Image testcontainers/ryuk:0.11.0 pull took PT0.69840916S
-12:23:15.763 [Test worker] INFO tc.testcontainers/ryuk:0.11.0 -- Creating container for image: testcontainers/ryuk:0.11.0
-12:23:15.834 [Test worker] INFO tc.testcontainers/ryuk:0.11.0 -- Container testcontainers/ryuk:0.11.0 is starting: 6f493a7f2736879be71776153a3fc19c45713d46a186f96498338c9a4069b6df
-12:23:16.219 [Test worker] INFO tc.testcontainers/ryuk:0.11.0 -- Container testcontainers/ryuk:0.11.0 started in PT0.456046398S
-12:23:16.227 [Test worker] INFO org.testcontainers.utility.RyukResourceReaper -- Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
-12:23:16.227 [Test worker] INFO org.testcontainers.DockerClientFactory -- Checking the system...
-12:23:16.228 [Test worker] INFO org.testcontainers.DockerClientFactory -- ✔︎ Docker server version should be at least 1.6.0
-12:23:16.228 [Test worker] INFO tc.ecommerce-config-server:latest -- Creating container for image: ecommerce-config-server:latest
-12:23:16.247 [Test worker] INFO tc.ecommerce-config-server:latest -- Container ecommerce-config-server:latest is starting: 5c7c24c7695e117f315871a2a5cbbf414cbe463ae2ae27249c6b1320af84b514
-12:23:16.374 [Test worker] INFO org.testcontainers.containers.wait.strategy.HttpWaitStrategy -- /sweet_lovelace: Waiting for 60 seconds for URL: http://localhost:32769/actuator/health (where port 32769 maps to container port 8888)
-12:23:24.874 [Test worker] INFO tc.ecommerce-config-server:latest -- Container ecommerce-config-server:latest started in PT8.645529796S
-12:23:27.662 [Test worker] INFO org.apache.sshd.common.util.security.bouncycastle.BouncyCastleSecurityProviderRegistrar -- getOrCreateProvider(BC) created instance of org.bouncycastle.jce.provider.BouncyCastleProvider
-12:23:27.664 [Test worker] INFO org.apache.sshd.common.util.security.eddsa.EdDSASecurityProviderRegistrar -- getOrCreateProvider(EdDSA) created instance of net.i2p.crypto.eddsa.EdDSASecurityProvider
-12:23:27.746 [Test worker] INFO org.apache.sshd.common.io.DefaultIoServiceFactoryFactory -- No detected/configured IoServiceFactoryFactory; using Nio2ServiceFactoryFactory
+13:08:07.797 [Test worker] INFO tc.testcontainers/ryuk:0.11.0 -- Pulling docker image: testcontainers/ryuk:0.11.0. Please be patient; this may take some time but only needs to be done once.
+13:08:08.025 [docker-java-stream--1295187651] INFO tc.testcontainers/ryuk:0.11.0 -- Starting to pull image
+13:08:08.039 [docker-java-stream--1295187651] INFO tc.testcontainers/ryuk:0.11.0 -- Pulling image layers:  0 pending,  0 downloaded,  0 extracted, (0 bytes/0 bytes)
+13:08:08.169 [docker-java-stream--1295187651] INFO tc.testcontainers/ryuk:0.11.0 -- Pulling image layers:  2 pending,  1 downloaded,  0 extracted, (45 KB/? MB)
+13:08:08.182 [docker-java-stream--1295187651] INFO tc.testcontainers/ryuk:0.11.0 -- Pulling image layers:  1 pending,  2 downloaded,  0 extracted, (45 KB/? MB)
+13:08:08.219 [docker-java-stream--1295187651] INFO tc.testcontainers/ryuk:0.11.0 -- Pulling image layers:  0 pending,  3 downloaded,  0 extracted, (144 KB/10 MB)
+13:08:08.288 [docker-java-stream--1295187651] INFO tc.testcontainers/ryuk:0.11.0 -- Pulling image layers:  0 pending,  3 downloaded,  1 extracted, (3 MB/10 MB)
+13:08:08.406 [docker-java-stream--1295187651] INFO tc.testcontainers/ryuk:0.11.0 -- Pulling image layers:  0 pending,  3 downloaded,  2 extracted, (4 MB/10 MB)
+13:08:08.444 [docker-java-stream--1295187651] INFO tc.testcontainers/ryuk:0.11.0 -- Pulling image layers:  0 pending,  3 downloaded,  3 extracted, (10 MB/10 MB)
+13:08:08.449 [Test worker] INFO tc.testcontainers/ryuk:0.11.0 -- Image testcontainers/ryuk:0.11.0 pull took PT0.652005462S
+13:08:08.472 [Test worker] INFO tc.testcontainers/ryuk:0.11.0 -- Creating container for image: testcontainers/ryuk:0.11.0
+13:08:08.545 [Test worker] INFO tc.testcontainers/ryuk:0.11.0 -- Container testcontainers/ryuk:0.11.0 is starting: 968175ca11409b724f5388176c4b377cae17d99b7372118b8678f2ed2ba4cd84
+13:08:08.916 [Test worker] INFO tc.testcontainers/ryuk:0.11.0 -- Container testcontainers/ryuk:0.11.0 started in PT0.444482061S
+13:08:08.924 [Test worker] INFO org.testcontainers.utility.RyukResourceReaper -- Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+13:08:08.925 [Test worker] INFO org.testcontainers.DockerClientFactory -- Checking the system...
+13:08:08.925 [Test worker] INFO org.testcontainers.DockerClientFactory -- ✔︎ Docker server version should be at least 1.6.0
+13:08:08.925 [Test worker] INFO tc.ecommerce-config-server:latest -- Creating container for image: ecommerce-config-server:latest
+13:08:08.945 [Test worker] INFO tc.ecommerce-config-server:latest -- Container ecommerce-config-server:latest is starting: bee8c816c7c8eb03b997cfe1683d03c26e396b553c044f32e237a68529a07ffd
+13:08:09.072 [Test worker] INFO org.testcontainers.containers.wait.strategy.HttpWaitStrategy -- /vibrant_chaum: Waiting for 60 seconds for URL: http://localhost:32769/actuator/health (where port 32769 maps to container port 8888)
+13:08:17.466 [Test worker] INFO tc.ecommerce-config-server:latest -- Container ecommerce-config-server:latest started in PT8.540474757S
+13:08:18.836 [Test worker] INFO org.apache.sshd.common.util.security.bouncycastle.BouncyCastleSecurityProviderRegistrar -- getOrCreateProvider(BC) created instance of org.bouncycastle.jce.provider.BouncyCastleProvider
+13:08:18.837 [Test worker] INFO org.apache.sshd.common.util.security.eddsa.EdDSASecurityProviderRegistrar -- getOrCreateProvider(EdDSA) created instance of net.i2p.crypto.eddsa.EdDSASecurityProvider
+13:08:18.914 [Test worker] INFO org.apache.sshd.common.io.DefaultIoServiceFactoryFactory -- No detected/configured IoServiceFactoryFactory; using Nio2ServiceFactoryFactory
 </pre>
 </span>
 </div>
@@ -146,7 +146,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 8.13</a> at May 7, 2025, 12:23:30 PM</p>
+<a href="https://www.gradle.org">Gradle 8.13</a> at May 7, 2025, 1:08:21 PM</p>
 </div>
 </div>
 </body>
